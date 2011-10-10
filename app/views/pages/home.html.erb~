@@ -1,4 +1,4 @@
 <h1>Sample App</h1>
 This is the home page for the sample app
-<%=link_to "Sign up",signup_path%>
+<%=link_to "Sign up","#"%>
 	

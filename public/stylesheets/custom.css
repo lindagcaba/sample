@@ -1,0 +1,43 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+header{
+	height:50px;
+}
+.container{
+	width:700px;
+}
+
+header{
+	margin-bottom:20px;
+}
+
+
+section {
+	margin-top:1em;
+}
+/*navigation*/
+nav {
+	float:right;
+	margin-top:10px;
+}
+nav ul li {
+	display:inline;
+	margin-left:5px;
+}
+nav ul li a {
+	text-decoration:none;
+}
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+footer{
+	margin-top:10px;
+}
+
+footer nav {
+	float:none;
+}

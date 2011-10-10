@@ -2,13 +2,35 @@
 <html>
 <head>
 	<title>RoR Sample App | <%=@title%></title>
-  <%= stylesheet_link_tag :all %>
+  <%=stylesheet_link_tag 'blueprint/screen',:media => 'screen'%>
+  <%=stylesheet_link_tag 'blueprint/print',:media => 'print'%>
+  <%=stylesheet_link_tag 'custom',:media => 'screen'%>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
+<div class = "container">	
+	<header>
+		<%=image_tag "#",:size =>'50x50'%>
+		<nav>
+			<ul>
+			<li><%=link_to "Home",root_path %></li>
+			<li><%=link_to "Help",help_path %></li>
+			<li><%=link_to "Sign in","#"%></li>
+			</ul>
+		</nav>
+	</header>
+<section>
 <%= yield %>
-
+</section>
+<footer>
+	<nav>
+  <ul>
+  	<li><%= link_to "About",about_path%></li>
+  	<li><%= link_to "Contact",contact_path%></li>
+  </ul>
+  </nav>
+</foooter>
+</div>
 </body>
 </html>
